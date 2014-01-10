@@ -18,7 +18,7 @@ This project was created for users of Debitoor to help them easily create invoic
   - [/api/v1.0/debitoor/customers/import](#api-v1-0-debitoor-customers-import)
     - [POST](#post_1)
 - [Tests](#tests)
-  -[Structure](#structure)
+  - [Structure](#structure)
 - [Possible Improvements](#possible-improvements)
 
 ## Requirements
