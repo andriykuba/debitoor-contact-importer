@@ -24,7 +24,7 @@ This project was created for users of Debitoor to help them easily create invoic
 
 [**Node.js**](http://nodejs.org/) for run, [**MongoDB**](http://www.mongodb.org/) for save and [**Mocha**](http://visionmedia.github.io/mocha/) for tests.
 
-The configuration is in the "config/private.json" and the "config/public.json" files. The "config/private.json" file is used for store a secret properties such as a user passwords or the "clien secret" of Debitoor API. It's a nice idea to exclude it from your repository.
+The configuration is in the `config/private.json` and the `config/public.json` files. The `config/private.json` file is used for store a secret properties such as a user passwords or the "client secret" of Debitoor API. It's a nice idea to exclude it from your repository. For example you could use `git update-index --assume-unchanged config/private.json` command right after first pull. 
 
 ## How it works
 
@@ -36,13 +36,13 @@ CSV could have any fields. We need to map a contact from CSV with a customer fro
 
 The user could import contacts to Debitoor. Before that user needs to grant access for the our application to Debitoor. 
 
-Take attention that this API is JSON-based. So do not forget to add "Content-Type":"application/json" header to all request except file upload. 
+Take attention that this API is JSON-based. So do not forget to add `"Content-Type":"application/json"` header to all request except file upload. 
 
 ## Authentication
 
-["Basic Authentication"](http://en.wikipedia.org/wiki/Basic_access_authentication) method was selected for authentification as simplest one. It's easy to change by changing "routes/users.auth" method to use authentication what you like.
+["Basic Authentication"](http://en.wikipedia.org/wiki/Basic_access_authentication) method was selected for authentification as simplest one. It's easy to change by changing `routes/users.auth` method to use authentication what you like.
 
-Users and they passwords are stored in the "config/private.json" file as simple json array:
+Users and they passwords are stored in the `config/private.json` file as simple json array:
 
 ```json
 {
@@ -62,10 +62,10 @@ User name is the user ID, so be careful - users with the same name will have acc
 
 Need to take a few steps to allow the application to work with Debitoor. 
 
-1. Go to the home page of application, i.e. **"/"**, and press "Grant access to Debitoor" link.
+1. Go to the home page of application, i.e. `"/"`, and press "Grant access to Debitoor" link.
 2. Login to Debitoor and Allow access for the application.
 3. You will be redirected back to the home page with special code on that page.
-4. Copy and paste this code in the **"/api/v1.0/debitoor/register"** API GET request. 
+4. Copy and paste this code in the `"/api/v1.0/debitoor/register"` API GET request. 
 
     GET request example:
 
@@ -87,7 +87,7 @@ This is the endpoint of contacts. You could do POST or GET requests to this URL.
 
 #### POST
 
-Upload CSV file, clean the contacts collection, create new contacts on the base of CSV. Successfully if response code is 200. It also returns JSON object with property "complete". The property always will be true as error will be thrown otherwise. This type of response is general for a POST or a PUT requests in this API.
+Upload CSV file, clean the contacts collection, create new contacts on the base of CSV. Successfully if response code is 200. It also returns JSON object with property `complete`. The property always will be true as error will be thrown otherwise. This type of response is general for a POST or a PUT requests in this API.
 
 CSV file example:
 
@@ -174,7 +174,7 @@ Result of CSV parsing example:
 }
 ```
 
-We recommend that you add a non-empty "default" property for the [items that required for Debitoor](https://api.debitoor.com/api/v1.0/schemas/customer).
+We recommend that you add a non-empty `default` property for the [items that required for Debitoor](https://api.debitoor.com/api/v1.0/schemas/customer).
 
 Matching scheme example:
 
@@ -213,9 +213,9 @@ Returns the current matching scheme.
 
 The application has all the contacts from the database, convert them into customers and post to Debitoor. We are importing email contacts, so we assume the email is the user ID. Debitoor customers can have the same email for different customers. This could cause the problem. Application proposing three way of solving them. 
 
-1. "add" - just import all contacts.
-2. "ignore" - imort contact only if there is no customer with the same email in Debitoor.
-3. "update" - if the customer is on the same e-mail, then the customer will be updated with the values ​​of the contact. All other contacts just import. If there is more than one customer with the same email in Debitoor, then last one would be updated.
+1. `add` - just import all contacts.
+2. `ignore` - imort contact only if there is no customer with the same email in Debitoor.
+3. `update` - if the customer is on the same e-mail, then the customer will be updated with the values ​​of the contact. All other contacts just import. If there is more than one customer with the same email in Debitoor, then last one would be updated.
 
 ### /api/v1.0/debitoor/customers/import
 
