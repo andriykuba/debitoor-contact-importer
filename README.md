@@ -18,6 +18,7 @@ This project was created for users of Debitoor to help them easily create invoic
   - [/api/v1.0/debitoor/customers/import](#api-v1-0-debitoor-customers-import)
     - [POST](#post_1)
 - [Tests](#tests)
+  -[Structure](#structure)
 - [Possible Improvements](#possible-improvements)
 
 ## Requirements
@@ -257,6 +258,26 @@ Request example:
 ```
 
 ## Tests
+
+We use [**Mocha**](http://visionmedia.github.io/mocha/), [**Should**](https://github.com/visionmedia/should.js) and [**Supertest**](https://github.com/visionmedia/supertest) for testing.
+
+
+
+### Structure
+
+As usual, our tests are situated in the `test` folder. This folder has `data` subfolder with some test data, they are too complicated to be included directly in the test code. A short description is:
+
+1. `contacts.csv` - CSV file with contacts to be uploaded into the application.
+2. `contacts-uploaded.json` - contacts parsed by the application.
+3. `scheme.json` - the scheme of matching a contact to a customer.
+4. `customers-imported.json` - customers parsed by the Debitoor.
+5. `customers-imported-mask.json` - comparable fields of the customer exported from Debitoor.
+
+The `test` folder itself contents tests
+
+1. `tools.js` - useful for testing code is extracted into a separate file, so as not to interfere with the test code.
+2. `functionsl.js` - functional tests. Test API calls and interaction with Debitoor.
+3. `unit.js` - some unit tests to check some application modules
 
 ## Possible Improvements
 
