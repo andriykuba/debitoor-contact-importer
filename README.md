@@ -261,7 +261,9 @@ Request example:
 
 We use [**Mocha**](http://visionmedia.github.io/mocha/), [**Should**](https://github.com/visionmedia/should.js) and [**Supertest**](https://github.com/visionmedia/supertest) for testing.
 
+Main accent is done on the functional testing. We did test for all endpoints, including registration in Debitoor. In the process of tests we drop test database and delete all customers from Debitoor account. So be careful - do not test against useful accounts.
 
+We do not recommend to change test database and test users in the `public.json` file. If you decide to change test user, do not forget to check that `test/tools.js` contains correct user name and password for `auth`, `authAnother`, `authWrong` variables.
 
 ### Structure
 
