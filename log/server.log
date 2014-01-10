@@ -1,0 +1,909 @@
+{"level":"info","message":"Environment: development","timestamp":"2014-01-09T18:38:49.357Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T18:38:49.399Z"}
+{"level":"info","message":"Mongoose default connection disconnected","timestamp":"2014-01-09T18:54:06.659Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T18:54:11.033Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T18:54:11.124Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T18:54:11.139Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T18:54:11.139Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T18:54:11.152Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T18:54:12.116Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T18:54:12.143Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T18:54:12.311Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T18:55:10.330Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T18:55:10.384Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T18:55:10.398Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T18:55:10.399Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T18:55:10.412Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T18:55:10.989Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T18:55:11.015Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T18:55:11.188Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T18:55:19.252Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T18:55:19.304Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T18:55:19.318Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T18:55:19.319Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T18:55:19.334Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T18:55:19.919Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T18:55:19.954Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T18:55:20.136Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T18:56:32.792Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T18:56:32.842Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T18:56:32.857Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T18:56:32.857Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T18:56:32.870Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T18:56:33.450Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T18:56:33.477Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T18:56:33.635Z"}
+{"level":"info","message":"{\"authorize\":\"eyJjbGllbnRfaWQiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJyZWRpcmVjdF91cmkiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAvIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCIkZSI6MTM4OTI5NDM5Nzk1MX0KacKkwr7Dq8O6wpLCq8KIw4_CqWgzZsK8w5DCng\",\"lang\":\"en-US\",\"email\":\"utility.creature@gmail.com\",\"password\":\"debbidon45\"}","timestamp":"2014-01-09T18:56:34.376Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T18:58:32.555Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T18:58:32.607Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T18:58:32.622Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T18:58:32.622Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T18:58:32.635Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T18:58:33.218Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T18:58:33.245Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T18:58:33.422Z"}
+{"level":"info","message":"{\"authorize\":\"eyJjbGllbnRfaWQiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJyZWRpcmVjdF91cmkiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAvIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCIkZSI6MTM4OTI5NDUxNzY2Nn0KIsOcwqJhMAnDqsOEw47Dq8OYXApew5fDoA\",\"lang\":\"en-US\",\"email\":\"utility.creature@gmail.com\",\"password\":\"debbidon45\"}","timestamp":"2014-01-09T18:58:34.060Z"}
+{"level":"info","message":"Environment: development","timestamp":"2014-01-09T19:01:40.999Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:01:41.045Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter","timestamp":"2014-01-09T19:01:41.061Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:01:41.061Z"}
+{"level":"info","message":"Mongoose default connection disconnected","timestamp":"2014-01-09T19:03:20.584Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:03:24.142Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:03:24.217Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:03:24.232Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:03:24.232Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:03:24.245Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:03:24.827Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:03:24.854Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:03:25.015Z"}
+{"level":"info","message":"{\"email\":\"utility.creature@gmail.com\",\"password\":\"debbidon45\",\"authorize\":\"eyJjbGllbnRfaWQiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJyZWRpcmVjdF91cmkiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAvIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCIkZSI6MTM4OTI5NDgwOTI5Nn0KwrjCkmrCtsO5w6VsA8OZDEVGdsK8wqgi\",\"lang\":\"en-US\"}","timestamp":"2014-01-09T19:03:25.680Z"}
+{"level":"info","message":"https://app.debitoor.com/login/oauth2/authorize?client_id=52b88398b31568c66e003d16&response_type=code&redirect_uri=http://127.0.0.1:3000/","timestamp":"2014-01-09T19:03:25.680Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:05:04.136Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:05:04.188Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:05:04.203Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:05:04.203Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:05:04.219Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:05:04.809Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:05:04.843Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:05:05.014Z"}
+{"level":"info","message":"{\"email\":\"utility.creature@gmail.com\",\"password\":\"debbidon45\",\"authorize\":\"eyJjbGllbnRfaWQiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJyZWRpcmVjdF91cmkiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAvIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCIkZSI6MTM4OTI5NDkwOTI4OH0Kw6xvZ8O9wpRKw7knw6PCvCsFXsKcw7ks\",\"lang\":\"en-US\"}","timestamp":"2014-01-09T19:05:05.674Z"}
+{"level":"info","message":"https://app.debitoor.com/login/oauth2/authorize?client_id=52b88398b31568c66e003d16&response_type=code&redirect_uri=http://127.0.0.1:3000/","timestamp":"2014-01-09T19:05:05.675Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:06:20.910Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:06:20.961Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:06:20.976Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:06:20.976Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:06:20.989Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:06:21.571Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:06:21.598Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:06:21.776Z"}
+{"level":"info","message":"{\"email\":\"utility.creature@gmail.com\",\"password\":\"debbidon45\",\"authorize\":\"eyJjbGllbnRfaWQiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJyZWRpcmVjdF91cmkiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAvIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCIkZSI6MTM4OTI5NDk4NjA2M30KHsO7WBVJwrQWwprDk2NvWwRAKMKZ\",\"lang\":\"en-US\"}","timestamp":"2014-01-09T19:06:22.455Z"}
+{"level":"info","message":"https://app.debitoor.com/login/oauth2/authorize?client_id=52b88398b31568c66e003d16&response_type=code&redirect_uri=http://127.0.0.1:3000/","timestamp":"2014-01-09T19:06:22.455Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:07:09.877Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:07:09.943Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:07:09.958Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:07:09.958Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:07:09.979Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:07:10.931Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:07:10.958Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:07:11.137Z"}
+{"level":"info","message":"{\"email\":\"utility.creature@gmail.com\",\"password\":\"debbidon45\",\"authorize\":\"eyJjbGllbnRfaWQiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJyZWRpcmVjdF91cmkiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAvIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCIkZSI6MTM4OTI5NTAzNTQwMn0KHsOgwp7DgcKAw5gZQ1htJ1DCncOEL8Oa\",\"lang\":\"en-US\"}","timestamp":"2014-01-09T19:07:11.796Z"}
+{"level":"info","message":"https://app.debitoor.com/login/oauth2/authorize?client_id=52b88398b31568c66e003d16&response_type=code&redirect_uri=http://127.0.0.1:3000/","timestamp":"2014-01-09T19:07:11.797Z"}
+{"level":"info","message":"Moved Temporarily. Redirecting to http://127.0.0.1:3000/?code=eyJhcHAiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJ1c2VyIjoiNTJjZWRjYmM3ZTY4ZTBkYTEwMDAwZGY2IiwiJGUiOjEzODkyOTUwMzczMDd9CjHDg8ODChVvwrYrekcawooEw5N-Gw","timestamp":"2014-01-09T19:07:13.638Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:07:25.579Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:07:25.628Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:07:25.648Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:07:25.648Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:07:25.662Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:07:26.247Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:07:26.289Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:07:26.456Z"}
+{"level":"info","message":"{\"email\":\"utility.creature@gmail.com\",\"password\":\"debbidon45\",\"authorize\":\"eyJjbGllbnRfaWQiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJyZWRpcmVjdF91cmkiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAvIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCIkZSI6MTM4OTI5NTA1MDc0NX0KwpjCtjp3ek4NwpQEwrDDvRMxMMOFWA\",\"lang\":\"en-US\"}","timestamp":"2014-01-09T19:07:27.130Z"}
+{"level":"info","message":"https://app.debitoor.com/login/oauth2/authorize?client_id=52b88398b31568c66e003d16&response_type=code&redirect_uri=http://127.0.0.1:3000/","timestamp":"2014-01-09T19:07:27.131Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:10:21.383Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:10:21.461Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:10:21.494Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:10:21.495Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:10:21.507Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:10:22.083Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:10:22.110Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:10:22.275Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:11:22.127Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:11:22.180Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:11:22.195Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:11:22.195Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:11:22.210Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:11:22.790Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:11:22.817Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:11:22.985Z"}
+{"level":"info","message":"http://127.0.0.1:3000/?code=eyJhcHAiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJ1c2VyIjoiNTJjZWRjYmM3ZTY4ZTBkYTEwMDAwZGY2IiwiJGUiOjEzODkyOTUyODg3Mzl9CsKrw47DhsOaw7rDtTPDl3BUTkkfwqAdw6U","timestamp":"2014-01-09T19:11:25.067Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:16:09.299Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:16:09.389Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:16:09.404Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:16:09.404Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:16:09.418Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:16:10.382Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:16:10.409Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:16:10.572Z"}
+{"level":"info","message":"code:eyJhcHAiOiI1MmI4ODM5OGIzMTU2OGM2NmUwMDNkMTYiLCJ1c2VyIjoiNTJjZWRjYmM3ZTY4ZTBkYTEwMDAwZGY2IiwiJGUiOjEzODkyOTU1NzY1MDJ9CsKgKxnChSTCs8OkYsKdRAbCksKUwqVsYA","timestamp":"2014-01-09T19:16:12.859Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:19:01.219Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:19:01.271Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:19:01.285Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:19:01.286Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:19:01.301Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:19:01.873Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:19:01.899Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:19:02.059Z"}
+{"level":"info","message":"user has been created: user1","timestamp":"2014-01-09T19:19:04.550Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-09T19:19:05.247Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:21:21.634Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:21:21.726Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:21:21.742Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:21:21.742Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:21:21.756Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:21:22.737Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:21:22.772Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:21:22.936Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-09T19:21:24.720Z"}
+{"level":"error","message":"Debitoor respone code: 400","timestamp":"2014-01-09T19:21:25.225Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:27:56.871Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:27:56.961Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:27:56.976Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:27:56.976Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:27:56.990Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:27:57.959Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:27:57.986Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:27:58.152Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-09T19:28:02.782Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-09T19:28:03.930Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:30:42.883Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:30:42.932Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:30:42.946Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:30:42.947Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:30:42.960Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:30:43.551Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:30:43.579Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:30:43.742Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-09T19:30:46.025Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-09T19:30:46.527Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:30:55.121Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:30:55.170Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:30:55.204Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:30:55.784Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:30:55.811Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:30:55.977Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:34:56.895Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:34:56.986Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:34:57.001Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:34:57.002Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:34:57.017Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:34:57.981Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:34:58.008Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:34:58.172Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-09T19:35:00.317Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-09T19:35:00.829Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T19:58:31.376Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T19:58:31.461Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T19:58:31.476Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T19:58:31.476Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T19:58:31.490Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T19:58:32.505Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T19:58:32.532Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T19:58:32.691Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-09T19:58:35.046Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-09T19:58:35.556Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T21:15:03.921Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T21:15:04.029Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T21:15:05.182Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T21:15:05.215Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T21:15:05.404Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-09T21:15:12.995Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-09T21:15:14.369Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T21:15:29.356Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T21:15:29.417Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T21:15:29.435Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T21:15:29.435Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T21:15:29.452Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T21:15:30.134Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T21:15:30.163Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T21:15:30.339Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-09T21:15:32.539Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-09T21:15:33.043Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-09T21:15:33.605Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-09T21:15:33.619Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-09T21:15:33.659Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-09T21:15:33.670Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-09T21:18:39.114Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-09T21:18:39.166Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-09T21:18:39.182Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-09T21:18:39.182Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-09T21:18:39.199Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-09T21:18:39.787Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-09T21:18:39.814Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-09T21:18:39.976Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-09T21:18:42.045Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-09T21:18:42.528Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T12:23:17.639Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T12:23:17.760Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T12:23:17.853Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T12:23:18.946Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T12:23:18.972Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T12:23:19.156Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T12:23:21.742Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T12:23:22.425Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T12:28:57.484Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T12:28:57.570Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T12:28:57.599Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T12:28:57.600Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T12:28:57.625Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T12:28:58.586Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T12:28:58.622Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T12:28:58.813Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T12:29:01.354Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T12:29:01.854Z"}
+{"level":"info","message":"[{\"email\":\"dean@edwards.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Dean Edwards\",\"number\":2,\"id\":\"52cf117af5d553621600122b\"},{\"email\":\"douglas.crockford@gmail.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"ENTER NAME PLEASE\",\"number\":3,\"id\":\"52cf117af5d553621600122c\"},{\"email\":\"jhon@resing.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Jhon Resing\",\"number\":1,\"id\":\"52cf117af5d553621600122a\"},{\"email\":\"nicholas@czakas.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Nicholas C. Zakas\",\"number\":4,\"id\":\"52cf117af5d553621600122d\"}]","timestamp":"2014-01-10T12:29:02.345Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T12:30:07.780Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T12:30:07.832Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T12:30:07.848Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T12:30:07.848Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T12:30:07.863Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T12:30:08.443Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T12:30:08.470Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T12:30:08.693Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T12:30:10.725Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T12:30:11.223Z"}
+{"level":"info","message":"[{\"email\":\"dean@edwards.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Dean Edwards\",\"number\":2,\"id\":\"52cf117af5d553621600122b\"},{\"email\":\"douglas.crockford@gmail.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"ENTER NAME PLEASE\",\"number\":3,\"id\":\"52cf117af5d553621600122c\"},{\"name\":\"Jhon Resing\",\"number\":1,\"email\":\"jhon@resing.com\",\"paymentTermsId\":1,\"countryCode\":\"DK\",\"isArchived\":true,\"id\":\"52cf117af5d553621600122a\"},{\"email\":\"nicholas@czakas.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Nicholas C. Zakas\",\"number\":4,\"id\":\"52cf117af5d553621600122d\"}]","timestamp":"2014-01-10T12:30:11.715Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T12:37:05.090Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T12:37:05.178Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T12:37:05.193Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T12:37:05.193Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T12:37:05.208Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T12:37:06.185Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T12:37:06.213Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T12:37:06.390Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T12:37:08.469Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T12:37:08.990Z"}
+{"level":"info","message":"undefined","timestamp":"2014-01-10T12:37:09.516Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T12:37:26.714Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T12:37:26.765Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T12:37:26.779Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T12:37:26.780Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T12:37:26.798Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T12:37:27.401Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T12:37:27.431Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T12:37:27.612Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T12:37:30.690Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T12:37:31.182Z"}
+{"level":"info","message":"[{\"email\":\"dean@edwards.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Dean Edwards\",\"number\":2,\"id\":\"52cf117af5d553621600122b\"},{\"email\":\"douglas.crockford@gmail.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"ENTER NAME PLEASE\",\"number\":3,\"id\":\"52cf117af5d553621600122c\"},{\"email\":\"nicholas@czakas.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Nicholas C. Zakas\",\"number\":4,\"id\":\"52cf117af5d553621600122d\"}]","timestamp":"2014-01-10T12:37:31.679Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T13:10:29.831Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T13:10:29.920Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T13:10:30.910Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T13:10:30.939Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T13:10:31.146Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T13:10:33.538Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T13:10:34.045Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T13:12:20.263Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T13:12:20.331Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T13:12:20.361Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T13:12:21.070Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T13:12:21.100Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T13:12:21.288Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T13:12:23.587Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T13:12:24.098Z"}
+{"level":"info","message":"Archived: nicholas@czakas.com","timestamp":"2014-01-10T13:12:25.145Z"}
+{"level":"info","message":"Archived: douglas.crockford@gmail.com","timestamp":"2014-01-10T13:12:25.162Z"}
+{"level":"info","message":"Archived: dean@edwards.com","timestamp":"2014-01-10T13:12:25.194Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T13:13:44.110Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T13:13:44.178Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T13:13:44.193Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T13:13:44.194Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T13:13:44.208Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T13:13:45.381Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T13:13:45.410Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T13:13:45.586Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T13:13:47.936Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T13:13:48.445Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T13:22:33.670Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T13:22:33.757Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T13:22:33.772Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T13:22:33.773Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T13:22:33.787Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T13:22:34.778Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T13:22:34.804Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T13:22:34.966Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T13:22:37.014Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T13:22:37.492Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T13:22:46.854Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T13:22:46.907Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T13:22:46.922Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T13:22:46.923Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T13:22:46.935Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T13:22:47.506Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T13:22:47.532Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T13:22:47.712Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T13:22:49.659Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T13:22:50.171Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T13:22:51.280Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T13:22:51.288Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T13:22:51.357Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T13:22:51.375Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T13:23:07.193Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T13:23:07.247Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T13:23:07.262Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T13:23:07.262Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T13:23:07.335Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T13:23:07.914Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T13:23:07.942Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T13:23:08.113Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T13:23:10.353Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T13:23:10.892Z"}
+{"level":"info","message":"Archived: douglas.crockford@gmail.com","timestamp":"2014-01-10T13:23:11.940Z"}
+{"level":"info","message":"Archived: dean@edwards.com","timestamp":"2014-01-10T13:23:11.952Z"}
+{"level":"info","message":"Archived: nicholas@czakas.com","timestamp":"2014-01-10T13:23:12.006Z"}
+{"level":"info","message":"Archived: jhon@resing.com","timestamp":"2014-01-10T13:23:12.015Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T13:23:12.518Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T13:23:12.539Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T13:23:12.555Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T13:23:13.312Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T13:32:26.703Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T13:32:26.792Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T13:32:26.806Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T13:32:26.806Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T13:32:26.823Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T13:32:27.823Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T13:32:27.852Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T13:32:28.018Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T13:32:30.274Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T13:32:30.789Z"}
+{"level":"info","message":"[{\"email\":\"dean@edwards.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Dean Edwards\",\"number\":9,\"id\":\"52cff44570fbc68b760024fa\"},{\"email\":\"douglas.crockford@gmail.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"ENTER NAME PLEASE\",\"number\":10,\"id\":\"52cff44570fbc68b760024fb\"},{\"email\":\"jhon@resing.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Jhon Resing\",\"number\":12,\"id\":\"52cff44670fbc68b760024fd\"},{\"email\":\"nicholas@czakas.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Nicholas C. Zakas\",\"number\":11,\"id\":\"52cff44570fbc68b760024fc\"}]","timestamp":"2014-01-10T13:32:31.264Z"}
+{"level":"info","message":"Archived: nicholas@czakas.com","timestamp":"2014-01-10T13:32:31.751Z"}
+{"level":"info","message":"Archived: douglas.crockford@gmail.com","timestamp":"2014-01-10T13:32:31.796Z"}
+{"level":"info","message":"Archived: dean@edwards.com","timestamp":"2014-01-10T13:32:31.857Z"}
+{"level":"info","message":"Archived: jhon@resing.com","timestamp":"2014-01-10T13:32:31.860Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T13:32:32.367Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T13:32:32.386Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T13:32:32.397Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T13:32:32.474Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T14:02:37.510Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T14:02:37.597Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T14:02:38.585Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T14:02:38.612Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T14:02:38.785Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T14:02:41.595Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T14:02:42.115Z"}
+{"level":"info","message":"Archived: dean@edwards.com","timestamp":"2014-01-10T14:02:43.155Z"}
+{"level":"info","message":"Archived: douglas.crockford@gmail.com","timestamp":"2014-01-10T14:02:43.183Z"}
+{"level":"info","message":"Archived: jhon@resing.com","timestamp":"2014-01-10T14:02:43.305Z"}
+{"level":"info","message":"Archived: nicholas@czakas.com","timestamp":"2014-01-10T14:02:43.307Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T14:02:43.871Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T14:02:43.909Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T14:02:43.951Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T14:02:43.972Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T14:03:07.358Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T14:03:07.410Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T14:03:07.424Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T14:03:07.425Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T14:03:07.437Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T14:03:08.010Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T14:03:08.037Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T14:03:08.224Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T14:03:10.577Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T14:03:11.098Z"}
+{"level":"info","message":"Archived: jhon@resing.com","timestamp":"2014-01-10T14:03:12.079Z"}
+{"level":"info","message":"Archived: dean@edwards.com","timestamp":"2014-01-10T14:03:12.105Z"}
+{"level":"info","message":"Archived: douglas.crockford@gmail.com","timestamp":"2014-01-10T14:03:12.118Z"}
+{"level":"info","message":"Archived: nicholas@czakas.com","timestamp":"2014-01-10T14:03:12.188Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T14:03:12.705Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T14:03:12.737Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T14:03:12.772Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T14:03:12.811Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T14:25:01.752Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T14:25:01.843Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T14:25:01.858Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T14:25:01.858Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T14:25:01.878Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T14:25:02.869Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T14:25:02.897Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T14:25:03.072Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T14:25:05.307Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T14:25:05.797Z"}
+{"level":"info","message":"Archived: dean@edwards.com","timestamp":"2014-01-10T14:25:06.771Z"}
+{"level":"info","message":"Archived: douglas.crockford@gmail.com","timestamp":"2014-01-10T14:25:06.790Z"}
+{"level":"info","message":"Archived: nicholas@czakas.com","timestamp":"2014-01-10T14:25:06.811Z"}
+{"level":"info","message":"Archived: jhon@resing.com","timestamp":"2014-01-10T14:25:06.839Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T14:25:07.373Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T14:25:07.384Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T14:25:07.404Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T14:25:07.409Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T14:25:42.581Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T14:25:42.634Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T14:25:42.649Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T14:25:42.649Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T14:25:42.664Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T14:25:43.249Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T14:25:43.275Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T14:25:43.451Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T14:25:45.462Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T14:25:45.981Z"}
+{"level":"info","message":"Archived: dean@edwards.com","timestamp":"2014-01-10T14:25:46.964Z"}
+{"level":"info","message":"Archived: nicholas@czakas.com","timestamp":"2014-01-10T14:25:46.971Z"}
+{"level":"info","message":"Archived: douglas.crockford@gmail.com","timestamp":"2014-01-10T14:25:46.997Z"}
+{"level":"info","message":"Archived: jhon@resing.com","timestamp":"2014-01-10T14:25:47.021Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T14:25:47.658Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T14:25:47.683Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T14:25:47.699Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T14:25:47.706Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T14:31:13.497Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T14:31:13.583Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T14:31:13.601Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T14:31:13.601Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T14:31:13.614Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T14:31:14.596Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T14:31:14.624Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T14:31:14.786Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T14:31:17.078Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T14:31:17.566Z"}
+{"level":"info","message":"Archived: douglas.crockford@gmail.com","timestamp":"2014-01-10T14:31:18.530Z"}
+{"level":"info","message":"Archived: nicholas@czakas.com","timestamp":"2014-01-10T14:31:18.541Z"}
+{"level":"info","message":"Archived: dean@edwards.com","timestamp":"2014-01-10T14:31:18.574Z"}
+{"level":"info","message":"Archived: jhon@resing.com","timestamp":"2014-01-10T14:31:20.239Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T14:31:20.732Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T14:31:20.786Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T14:31:20.834Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T14:31:21.134Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T14:39:40.088Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T14:39:40.187Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T14:39:40.204Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T14:39:40.204Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T14:39:40.218Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T14:39:41.193Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T14:39:41.219Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T14:39:41.394Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T14:39:44.039Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T14:39:44.524Z"}
+{"level":"info","message":"Archived: douglas.crockford@gmail.com","timestamp":"2014-01-10T14:39:45.486Z"}
+{"level":"info","message":"Archived: nicholas@czakas.com","timestamp":"2014-01-10T14:39:45.496Z"}
+{"level":"info","message":"Archived: jhon@resing.com","timestamp":"2014-01-10T14:39:45.520Z"}
+{"level":"info","message":"Archived: dean@edwards.com","timestamp":"2014-01-10T14:39:45.543Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T14:39:46.055Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T14:39:46.079Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T14:39:46.126Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T14:39:46.138Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T15:07:08.517Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T15:07:08.604Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T15:07:08.620Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T15:07:08.620Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T15:07:08.635Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T15:07:09.606Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T15:07:09.637Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T15:07:09.830Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T15:07:12.243Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T15:07:12.770Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:07:13.843Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:07:13.858Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:07:13.883Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:07:13.894Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:07:14.427Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:07:14.450Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:07:14.463Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:07:14.518Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:07:16.142Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:07:16.388Z"}
+{"level":"info","message":"[{\"email\":\"douglas.crockford@gmail.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"UPDATED NAME\",\"number\":43,\"id\":\"52d00ca770fbc68b7600272f\"},{\"email\":\"jhon@resing.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Jhon Resing\",\"number\":42,\"id\":\"52d00ca7f5d5536216002551\"},{\"email\":\"nicholas@czakas.com\",\"countryCode\":\"DK\",\"paymentTermsId\":1,\"name\":\"Nicholas C. Zakas\",\"number\":41,\"id\":\"52d00ca770fbc68b7600272e\"}]","timestamp":"2014-01-10T15:07:16.389Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T15:13:05.643Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T15:13:05.738Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T15:13:05.753Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T15:13:05.753Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T15:13:05.767Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T15:13:06.761Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T15:13:06.791Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T15:13:07.035Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T15:13:09.835Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T15:13:10.369Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:13:12.108Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:13:12.117Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:13:12.221Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:13:14.117Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:13:14.145Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:13:14.287Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:13:14.299Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:13:16.074Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:13:16.124Z"}
+{"level":"info","message":"to update: jhon@resing.com","timestamp":"2014-01-10T15:13:16.835Z"}
+{"level":"info","message":"to update: nicholas@czakas.com","timestamp":"2014-01-10T15:13:16.837Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:13:16.838Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:13:17.397Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:13:17.447Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:13:17.450Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:13:17.534Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T15:16:28.406Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T15:16:28.464Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T15:16:28.479Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T15:16:28.480Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T15:16:28.500Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T15:16:29.117Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T15:16:29.143Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T15:16:29.302Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T15:16:31.864Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T15:16:32.362Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:16:33.469Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:16:33.493Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:16:33.508Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:16:33.549Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:16:34.051Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:16:34.070Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:16:34.109Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:16:34.127Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:16:35.667Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:16:35.688Z"}
+{"level":"info","message":"to update: jhon@resing.com","timestamp":"2014-01-10T15:16:36.287Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:16:36.287Z"}
+{"level":"info","message":"to update: nicholas@czakas.com","timestamp":"2014-01-10T15:16:36.287Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:16:36.792Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:16:36.804Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:16:36.819Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:16:37.238Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T15:52:38.189Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T15:52:38.281Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T15:52:38.296Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T15:52:38.297Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T15:52:38.310Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T15:52:39.265Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T15:52:39.294Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T15:52:39.466Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T15:52:41.697Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T15:52:42.248Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:52:43.262Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:52:43.267Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:52:43.295Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:52:43.312Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:52:43.813Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:52:43.844Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:52:43.860Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:52:43.883Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:52:45.474Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:52:45.477Z"}
+{"level":"info","message":"to update: jhon@resing.com","timestamp":"2014-01-10T15:52:46.100Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:52:46.100Z"}
+{"level":"info","message":"to update: nicholas@czakas.com","timestamp":"2014-01-10T15:52:46.101Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:52:46.666Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:52:46.669Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T15:53:35.363Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T15:53:35.420Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T15:53:35.434Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T15:53:35.435Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T15:53:35.447Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T15:53:36.026Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T15:53:36.052Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T15:53:36.227Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T15:53:38.578Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T15:53:39.071Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:53:40.376Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:53:40.381Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:53:40.431Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:53:40.451Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:53:40.968Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:53:41.021Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:53:41.022Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:53:41.034Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:53:42.778Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:53:42.780Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:53:43.403Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:53:43.937Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:53:43.959Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T15:54:28.207Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T15:54:28.261Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T15:54:28.277Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T15:54:28.278Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T15:54:28.293Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T15:54:28.885Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T15:54:28.913Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T15:54:29.093Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T15:54:32.494Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T15:54:33.008Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:54:34.006Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:54:34.048Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:54:34.067Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:54:34.689Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:54:35.194Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:54:35.347Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:54:35.359Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:54:35.368Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:54:36.906Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:54:36.921Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:54:37.520Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:54:38.004Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:54:38.033Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T15:54:41.759Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T15:54:41.812Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T15:54:41.829Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T15:54:41.829Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T15:54:41.844Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T15:54:42.415Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T15:54:42.444Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T15:54:42.619Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T15:54:44.624Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T15:54:45.126Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:54:46.127Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:54:46.147Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:54:46.176Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:54:46.193Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:54:46.688Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:54:46.702Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:54:46.720Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:54:46.746Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:54:48.223Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:54:48.241Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:54:48.863Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:54:49.379Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:54:50.199Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:54:51.758Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:54:51.779Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:54:52.335Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:54:52.348Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:54:52.365Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:54:52.379Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T15:57:08.032Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T15:57:08.088Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T15:57:08.105Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T15:57:08.105Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T15:57:08.120Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T15:57:08.692Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T15:57:08.719Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T15:57:08.893Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T15:57:11.284Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T15:57:11.771Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:57:12.764Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:57:12.770Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:57:12.799Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:57:12.818Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:57:12.821Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:57:12.850Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:57:12.861Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:57:13.352Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:57:13.376Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:57:13.387Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:57:13.469Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:57:14.978Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:57:15.002Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:57:15.609Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:57:16.100Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:57:16.424Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:57:18.450Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:57:18.463Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:57:18.967Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:57:18.990Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:57:19.010Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:57:19.513Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T15:58:20.554Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T15:58:20.649Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T15:58:20.665Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T15:58:20.665Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T15:58:20.680Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T15:58:21.635Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T15:58:21.661Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T15:58:21.828Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T15:58:24.034Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T15:58:24.529Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:58:25.647Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:58:25.652Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:58:25.695Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:58:25.697Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T15:58:25.707Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:58:25.724Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T15:58:25.751Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T15:58:26.246Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T15:58:26.268Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:58:26.283Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:58:26.309Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:58:28.160Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:58:28.183Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:58:28.907Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:58:29.391Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T15:58:29.404Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T15:58:31.163Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:58:31.178Z"}
+{"level":"info","message":"ignored: jhon@resing.com","timestamp":"2014-01-10T15:58:31.795Z"}
+{"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T15:58:31.795Z"}
+{"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T15:58:31.796Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T15:58:32.307Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T16:17:29.637Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T16:17:29.729Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T16:17:29.744Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T16:17:29.745Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T16:17:29.758Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T16:17:30.717Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T16:17:30.752Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T16:17:30.911Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T16:17:33.434Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T16:17:33.941Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T16:17:35.007Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T16:17:35.013Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:17:35.018Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:17:35.105Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T16:17:35.619Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:17:35.651Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T16:17:35.711Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:17:35.729Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:17:37.442Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:17:37.749Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:17:38.398Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:17:38.931Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:17:38.933Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:17:40.813Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:17:40.869Z"}
+{"level":"info","message":"ignored: jhon@resing.com","timestamp":"2014-01-10T16:17:41.468Z"}
+{"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T16:17:41.468Z"}
+{"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:17:41.468Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:17:42.012Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T16:30:41.880Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T16:30:41.975Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T16:30:41.990Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T16:30:41.990Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T16:30:42.004Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T16:30:42.974Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T16:30:43.000Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T16:30:43.163Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T16:30:45.669Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T16:30:46.177Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T16:30:47.210Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:30:47.297Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T16:30:47.789Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:30:47.990Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T16:30:48.511Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T16:30:48.884Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:30:48.894Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:30:48.969Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:30:50.503Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:30:50.523Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:30:51.135Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:30:51.616Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:30:51.642Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:30:53.304Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:30:53.324Z"}
+{"level":"info","message":"ignored: jhon@resing.com","timestamp":"2014-01-10T16:30:53.927Z"}
+{"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T16:30:53.927Z"}
+{"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:30:53.928Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:30:54.430Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T16:34:20.299Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T16:34:20.355Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T16:34:20.370Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T16:34:20.370Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T16:34:20.389Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T16:34:20.981Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T16:34:21.008Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T16:34:21.272Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T16:34:23.611Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T16:34:24.141Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T16:34:25.222Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:34:25.269Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:34:25.273Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T16:34:25.285Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:34:25.825Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T16:34:25.873Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T16:34:25.911Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:34:25.918Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:34:27.774Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:34:27.780Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:34:28.539Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:34:29.028Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:34:29.549Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:34:31.198Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:34:31.243Z"}
+{"level":"info","message":"ignored: jhon@resing.com","timestamp":"2014-01-10T16:34:31.917Z"}
+{"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:34:31.917Z"}
+{"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T16:34:31.919Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:34:32.496Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T16:34:49.497Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T16:34:49.620Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T16:34:49.635Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T16:34:49.636Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T16:34:49.651Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T16:34:50.257Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T16:34:50.289Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T16:34:50.486Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T16:34:52.756Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T16:34:53.331Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:34:54.496Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:34:54.536Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T16:34:54.548Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T16:34:54.592Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:34:55.143Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:34:55.182Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T16:34:55.198Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T16:34:55.322Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:34:57.166Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:34:57.196Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:34:57.974Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:34:58.553Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:34:58.903Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:35:00.473Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:35:00.492Z"}
+{"level":"info","message":"ignored: jhon@resing.com","timestamp":"2014-01-10T16:35:01.234Z"}
+{"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T16:35:01.234Z"}
+{"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:35:01.235Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:35:01.730Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T16:36:18.229Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T16:36:18.322Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T16:36:18.354Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T16:36:19.352Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T16:36:19.379Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T16:36:19.574Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T16:36:21.982Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T16:36:22.491Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:23.550Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T16:36:23.572Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:36:23.605Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T16:36:23.624Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T16:36:24.358Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:36:24.529Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T16:36:24.549Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:36:24.585Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:26.731Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:36:26.778Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:27.552Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:36:28.040Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:36:28.071Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:36:29.919Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:29.939Z"}
+{"level":"info","message":"ignored: jhon@resing.com","timestamp":"2014-01-10T16:36:30.681Z"}
+{"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T16:36:30.682Z"}
+{"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:30.682Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:36:31.180Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T16:36:48.451Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T16:36:48.507Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T16:36:48.522Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T16:36:48.523Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T16:36:48.535Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T16:36:49.135Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T16:36:49.163Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T16:36:49.330Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T16:36:51.596Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T16:36:52.095Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:36:53.110Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T16:36:53.131Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T16:36:53.151Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:53.188Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:36:53.691Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T16:36:53.704Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:36:53.724Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T16:36:53.768Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:36:55.332Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:55.415Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:56.131Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:36:56.640Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:36:56.657Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:36:58.255Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:58.267Z"}
+{"level":"info","message":"ignored: jhon@resing.com","timestamp":"2014-01-10T16:36:58.994Z"}
+{"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T16:36:58.995Z"}
+{"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:36:58.995Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:36:59.499Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T16:38:00.117Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T16:38:00.175Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T16:38:00.190Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T16:38:00.190Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T16:38:00.205Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T16:38:00.791Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T16:38:00.819Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T16:38:00.999Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T16:38:03.128Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T16:38:03.612Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:38:04.632Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T16:38:04.639Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:38:04.658Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T16:38:04.799Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T16:38:05.315Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:38:05.370Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:38:05.382Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T16:38:05.391Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:38:06.988Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:38:06.998Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:38:07.756Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T16:38:08.243Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:38:08.296Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T16:38:09.971Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:38:09.986Z"}
+{"level":"info","message":"ignored: jhon@resing.com","timestamp":"2014-01-10T16:38:10.679Z"}
+{"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:38:10.679Z"}
+{"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T16:38:10.679Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:38:11.163Z"}

@@ -1,0 +1,21 @@
+{
+	"env":{
+		"test":{
+			"debitoor":{
+				"user":{
+					"name": "some.debitoor.user.name@like.com",
+					"password": "somepassword"
+				}
+			}
+		}
+	},
+	"debitoor":{
+		"clientID": "debitoor.app.id",
+		"clientSecret": "debitoor.app.secret"
+	},
+	"users":[
+		{"name": "name1", "password": "pass1"},
+		{"name": "name2", "password": "pass2"},
+		{"name": "name3", "password": "pass3"}
+	]
+}

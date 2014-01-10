@@ -1,0 +1,16 @@
+{
+	"name": {
+		"map": ["First Name", "Last Name"],
+		"delimeter": " ",
+		"default": "ENTER NAME PLEASE"
+	},
+	"paymentTermsId": {
+		"default": 1
+	},
+	"countryCode":{
+		"default": "DK"
+	},
+	"email":{
+		"map": ["E-mail Address"]
+	}
+}

@@ -1,0 +1,34 @@
+extends layout
+
+block content
+	div
+		h1= title
+		#authlink.hidden
+			a(href="/auth")= login.link
+		#authcode.hidden
+			h3= login.code 
+			#code 
+	script.    
+		function getParameterByName(name) {
+			name = name.replace(/[\[]/, '\\\[').replace(/[\]]/, '\\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		}
+
+		function el(id){
+			return document.getElementById(id);
+		}
+
+		function show(id){
+			el(id).className = el(id).className.replace('hidden','');  
+		}
+
+		var code = getParameterByName('code');
+		var isCodeDetected = code !== '';
+		if(isCodeDetected){
+			show('authcode');
+			el('code').innerHTML = code;
+		}else{
+			show('authlink');
+		}

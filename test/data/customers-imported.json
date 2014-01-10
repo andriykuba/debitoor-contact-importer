@@ -1,0 +1,23 @@
+[
+	{
+		"email":"dean@edwards.com",
+		"countryCode":"DK",
+		"paymentTermsId":1,
+		"name":"Dean Edwards"
+	},{
+		"email":"douglas.crockford@gmail.com",
+		"countryCode":"DK",
+		"paymentTermsId":1,
+		"name":"ENTER NAME PLEASE"
+	},{
+		"email":"jhon@resing.com",
+		"countryCode":"DK",
+		"paymentTermsId":1,
+		"name":"Jhon Resing"
+	},{
+		"email":"nicholas@czakas.com",
+		"countryCode":"DK",
+		"paymentTermsId":1,
+		"name":"Nicholas C. Zakas"
+	}
+]
