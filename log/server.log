@@ -907,3 +907,45 @@
 {"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T16:38:10.679Z"}
 {"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T16:38:10.679Z"}
 {"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T16:38:11.163Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T23:09:28.634Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T23:09:28.727Z"}
+{"level":"info","message":"Mongoose default connection disconnected","timestamp":"2014-01-10T23:09:29.728Z"}
+{"level":"info","message":"Mongoose default connection error: Error: failed to connect to [localhost:27017]","timestamp":"2014-01-10T23:09:29.729Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T23:09:59.712Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T23:09:59.766Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T23:09:59.792Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T23:10:00.787Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T23:10:00.814Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T23:10:01.010Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T23:10:03.711Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T23:10:04.204Z"}
+{"level":"info","message":"Updated: jhon@resing.com","timestamp":"2014-01-10T23:10:05.400Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T23:10:05.426Z"}
+{"level":"info","message":"Updated: nicholas@czakas.com","timestamp":"2014-01-10T23:10:05.470Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T23:10:05.483Z"}
+{"level":"error","message":"TypeError: undefined is not a function\n    at customersImport (D:\\Dropbox\\dits\\api\\routes\\debitoor.js:67:17)\n    at callbacks (D:\\Dropbox\\dits\\api\\node_modules\\express\\lib\\router\\index.js:164:37)\n    at Promise.<anonymous> (D:\\Dropbox\\dits\\api\\routes\\user.js:31:11)\n    at Promise.<anonymous> (D:\\Dropbox\\dits\\api\\node_modules\\mongoose\\node_modules\\mpromise\\lib\\promise.js:171:8)\n    at Promise.EventEmitter.emit (events.js:95:17)\n    at Promise.emit (D:\\Dropbox\\dits\\api\\node_modules\\mongoose\\node_modules\\mpromise\\lib\\promise.js:88:38)\n    at Promise.fulfill (D:\\Dropbox\\dits\\api\\node_modules\\mongoose\\node_modules\\mpromise\\lib\\promise.js:101:20)\n    at D:\\Dropbox\\dits\\api\\node_modules\\mongoose\\lib\\query.js:1412:13\n    at model.Document.init (D:\\Dropbox\\dits\\api\\node_modules\\mongoose\\lib\\document.js:250:11)\n    at completeOne (D:\\Dropbox\\dits\\api\\node_modules\\mongoose\\lib\\query.js:1410:10)\n    at Object.cb (D:\\Dropbox\\dits\\api\\node_modules\\mongoose\\lib\\query.js:1169:11)\n    at Object._onImmediate (D:\\Dropbox\\dits\\api\\node_modules\\mongoose\\node_modules\\mquery\\lib\\utils.js:126:16)\n    at processImmediate [as _immediateCallback] (timers.js:330:15)","timestamp":"2014-01-10T23:10:05.497Z"}
+{"level":"info","message":"Environment: test","timestamp":"2014-01-10T23:11:02.071Z"}
+{"level":"info","message":"Express server run on: http://127.0.0.1:3000","timestamp":"2014-01-10T23:11:02.133Z"}
+{"level":"info","message":"Mongoose default connection open to mongodb://localhost/debitoorimporter-test","timestamp":"2014-01-10T23:11:02.148Z"}
+{"level":"info","message":"All Components ready to action.","timestamp":"2014-01-10T23:11:02.149Z"}
+{"level":"info","message":"Test database has been dropped","timestamp":"2014-01-10T23:11:02.163Z"}
+{"level":"info","message":"File has been uploaded","timestamp":"2014-01-10T23:11:02.756Z"}
+{"level":"info","message":"Number of contacts: 4","timestamp":"2014-01-10T23:11:02.784Z"}
+{"level":"info","message":"Schememap has been saved","timestamp":"2014-01-10T23:11:02.952Z"}
+{"level":"info","message":"User has been created: user1","timestamp":"2014-01-10T23:11:05.014Z"}
+{"level":"info","message":"Debitoor token has been saved","timestamp":"2014-01-10T23:11:05.505Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T23:11:06.511Z"}
+{"level":"info","message":"send: jhon@resing.com(Jhon Resing)","timestamp":"2014-01-10T23:11:06.524Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T23:11:06.550Z"}
+{"level":"info","message":"send: nicholas@czakas.com(Nicholas C. Zakas)","timestamp":"2014-01-10T23:11:06.575Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T23:11:08.211Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T23:11:08.241Z"}
+{"level":"info","message":"to update: douglas.crockford@gmail.com","timestamp":"2014-01-10T23:11:08.930Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T23:11:09.423Z"}
+{"level":"info","message":"send: douglas.crockford@gmail.com(ENTER NAME PLEASE)","timestamp":"2014-01-10T23:11:09.436Z"}
+{"level":"info","message":"Updated: dean@edwards.com","timestamp":"2014-01-10T23:11:11.019Z"}
+{"level":"info","message":"Updated: douglas.crockford@gmail.com","timestamp":"2014-01-10T23:11:11.037Z"}
+{"level":"info","message":"ignored: jhon@resing.com","timestamp":"2014-01-10T23:11:11.721Z"}
+{"level":"info","message":"ignored: douglas.crockford@gmail.com","timestamp":"2014-01-10T23:11:11.722Z"}
+{"level":"info","message":"ignored: nicholas@czakas.com","timestamp":"2014-01-10T23:11:11.722Z"}
+{"level":"info","message":"send: dean@edwards.com(Dean Edwards)","timestamp":"2014-01-10T23:11:12.284Z"}
