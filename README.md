@@ -41,7 +41,9 @@ Take attention that this API is JSON-based. So do not forget to add `"Content-Ty
 
 ## Authentication
 
-["Basic Authentication"](http://en.wikipedia.org/wiki/Basic_access_authentication) method was selected for authentification as simplest one. It's easy to change by changing `routes/users.auth` method to use authentication what you like.
+["Basic Authentication"](http://en.wikipedia.org/wiki/Basic_access_authentication) method was selected for authentification as simplest one. It's easy to change by changing `routes/users.auth` method to use authentication what you like. 
+
+We use https protocol to provide more security for this type of authentication. You could found [dummy certificates](http://docs.nodejitsu.com/articles/HTTP/servers/how-to-create-a-HTTPS-server) in the `config\key` directory. It's fine to use it for testing purpose, but on the production environment we strictly recommend you to replace them by CA-signed certificates. Do not forget to exclude CA-signed certificates from repository.
 
 Users and they passwords are stored in the `config/private.json` file as simple json array:
 
