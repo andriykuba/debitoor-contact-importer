@@ -2,7 +2,7 @@
 	"env":{
 		"production":{
 			"app":{
-				"port": 3000,
+				"port": 443,
 				"host": "127.0.0.1"
 			},
 			"db":{
@@ -11,7 +11,7 @@
 		},
 		"development":{
 			"app":{
-				"port": 3000,
+				"port": 443,
 				"host": "127.0.0.1"
 			},
 			"db":{
@@ -20,7 +20,7 @@
 		},
 		"test":{
 			"app":{
-				"port": 3000,
+				"port": 443,
 				"host": "127.0.0.1"
 			},
 			"db":{
@@ -35,8 +35,8 @@
 	"debitoor":{
 		"authorizationURL": "https://app.debitoor.com/login/oauth2/authorize",
 		"tokenURL": "https://app.debitoor.com/login/oauth2/access_token",
-		"callbackURL": "http://127.0.0.1:3000/",
-		"redirectUrl": "http://127.0.0.1:3000/",
+		"callbackURL": "https://127.0.0.1:3000/",
+		"redirectUrl": "https://127.0.0.1:3000/",
 		"clientID": "real-in-the-private-config",
 		"clientSecret": "real-in-the-private-config",
 		"api":{

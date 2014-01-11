@@ -8,6 +8,9 @@
 //NODE_ENV must be  set before exporting app
 process.env.NODE_ENV = 'test';
 
+//Accept self signed sertificate. Trivial sertificate for testing
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0" 
+
 var request = require('supertest');
 var url = require('url');
 var cheerio = require('cheerio');

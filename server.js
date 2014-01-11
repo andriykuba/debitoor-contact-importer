@@ -3,8 +3,9 @@
 
 var async = require('async');
 var express = require('express');
-var http = require('http');
+var https = require('https');
 var path = require('path');
+var fs = require('fs');
 
 var site = require('./routes/site');
 var user = require('./routes/user');
@@ -75,8 +76,13 @@ app.post('/api/v1.0/debitoor/register',
 
 
 function startServer(cb){
-	http.createServer(app).listen(config.app.port, config.app.host, function(){
-		var serverUrl = 'http://'+config.app.host+':'+config.app.port;
+	var options = {
+  	key: fs.readFileSync('config/key/key.pem'),
+  	cert: fs.readFileSync('config/key/cert.pem')
+	};
+
+	https.createServer(options, app).listen(config.app.port, config.app.host, function(){
+		var serverUrl = 'https://'+config.app.host+':'+config.app.port;
 		log.info('Express server run on: ' + serverUrl);
 		cb(null, serverUrl);
 	});
