@@ -35,8 +35,8 @@
 	"debitoor":{
 		"authorizationURL": "https://app.debitoor.com/login/oauth2/authorize",
 		"tokenURL": "https://app.debitoor.com/login/oauth2/access_token",
-		"callbackURL": "https://127.0.0.1:3000/",
-		"redirectUrl": "https://127.0.0.1:3000/",
+		"callbackURL": "https://127.0.0.1:443/",
+		"redirectUrl": "https://127.0.0.1:443/",
 		"clientID": "real-in-the-private-config",
 		"clientSecret": "real-in-the-private-config",
 		"api":{

@@ -267,6 +267,8 @@ Main accent is done on the functional testing. We did test for all endpoints, in
 
 We do not recommend to change test database and test users in the `public.json` file. If you decide to change test user, do not forget to check that `test/tools.js` contains correct user name and password for `auth`, `authAnother`, `authWrong` variables.
 
+Trivially you tests on another host than production. So it's better register a special "test" application on Debitoor for correct callback URL.
+
 ### Structure
 
 As usual, our tests are situated in the `test` folder. This folder has `data` subfolder with some test data, they are too complicated to be included directly in the test code. A short description is:
