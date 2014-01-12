@@ -4,49 +4,63 @@
 var log = require('winston');
 var request = require('request');
 var async = require('async');
+var events = require('events');
+var util = require('util');
 
 var config = require('../modules/aku-config');
 var db = require('../modules/aku-database');
 var akuString = require('../modules/aku-string');
 
 var CustomersImporter = function () {
+	events.EventEmitter.call(this);
 	this.token = null;
 	this.mergeRule = null;
 };
+util.inherits(CustomersImporter, events.EventEmitter);
 
-CustomersImporter.prototype.mapContact = function(schememap, contact){
-	function mapContact(field){
-		return contact[field];
-	}
+CustomersImporter.prototype.mapContacts = function(contacts, schememap){
 
-	var customer = {};
-	for (var x in schememap) {
-		var item =  schememap[x];
-		var isMappable = typeof item.map !== 'undefined';
-		var isObligatory = typeof item.default !== 'undefined';
+	function mapContact (contact){
+		var customer = {};
+		for (var x in schememap) {
+			var item =  schememap[x];
+			var isMappable = typeof item.map !== 'undefined';
+			var isObligatory = typeof item.default !== 'undefined';
 
-		var value = null;
-		if(isMappable){
-			var isDelimeterPresent = typeof item.delimeter !== 'undefined';
-			var delimeter = isDelimeterPresent ? item.delimeter : ',';
+			var value = null;
+			if(isMappable){
+				value = mapContactValue(item, contact);
+			}
 
+			if(value === null && isObligatory){
+				value = item.default;
+			}
 
-			value = item.map.map(mapContact).join(delimeter);
-			value = akuString.fulltrim(value);
-			if(value === ''){
-				value = null;
+			if(value !== null){
+				customer[x] = value;
 			}
 		}
-
-		if(value === null && isObligatory){
-			value = item.default;
-		}
-
-		if(value !== null){
-			customer[x] = value;
-		}
+		return customer;
 	}
-	return customer;
+
+	function mapContactValue(item, contact){
+		var delimeter = item.delimeter || ',';
+
+		var value = item.map.map(function(field){
+			return contact[field];
+		}).join(delimeter);
+
+		value = akuString.fulltrim(value);
+		if(value === ''){
+			return null;
+		}
+		return value;
+	}
+
+	var mappedContacts  = contacts.map(function(item){
+		return mapContact(item);
+	});
+	return mappedContacts;
 };
 
 CustomersImporter.prototype.detectMergeRule = function(req){
@@ -59,14 +73,20 @@ CustomersImporter.prototype.detectMergeRule = function(req){
 	var mergeRule = body.mergeRule || mergeRuleDefault;
 
 	if(mergeRules.indexOf(mergeRule)<0){
+		log.info(
+			'there is no merge rule:'+mergeRules+
+			', default'+mergeRuleDefault+'is set');
+
 		mergeRule = mergeRuleDefault;
 	}
 
+	log.info('merge rule: ' + mergeRule);
+	
 	return mergeRule;
 };
 
-CustomersImporter.prototype.customerUpdate = function(customer, id, cb){
-	var url = config.debitoor.api.customersURL+'/'+id;
+CustomersImporter.prototype.customerUpdate = function(customer, cb){
+	var url = config.debitoor.api.customersURL+'/'+customer.id;
 	this.customerSend(customer, url, 'PUT', cb);
 };
 
@@ -84,14 +104,15 @@ CustomersImporter.prototype.customerSend = function(customer, url, method, cb){
 			'x-token': this.token
 		}
 	},function (err, response, body) {
-		if(err){
-			cb(err);
-			return;
-		}
+		if(err) return cb(err);
 
 		if(response.statusCode != 200){
-			cb('Debitoor respone code on '+customer.email+':'+response.statusCode);
-			return;
+			err = new Error(
+				'Debitoor respone code on '+
+				customer.email+':'+
+				response.statusCode);
+
+			return cb(err);
 		}
 
 		log.info('send: ' + customer.email + '('+customer.name+')');
@@ -100,9 +121,12 @@ CustomersImporter.prototype.customerSend = function(customer, url, method, cb){
 };
 
 CustomersImporter.prototype.customerCreateTask = function(){
+	//this function creates tasks for "async" module within "Array.map()"
 	var self = this;
 	return function(contact){
 		return function(callback){
+			//actually we do "create customer" task
+			log.info('To create: '+contact.email);
 			self.customerCreate(contact, callback);
 		};
 	};
@@ -110,104 +134,106 @@ CustomersImporter.prototype.customerCreateTask = function(){
 
 CustomersImporter.prototype.createCustomerEmailMapper = function(customers){
 	var customersMap = {};
-	for (var i = 0; customers.length > i; i += 1) {
-		if(typeof customers[i].email !== 'undefined'){
-			customersMap[customers[i].email] = customers[i];
-		}
-	}
+
+	customers.filter(function(customer){
+		return typeof customer.email !== 'undefined';
+	}).forEach(function(customer){
+		customersMap[customer.email] = customer;
+	});
 
 	return function(email) {
 		return customersMap[email];
 	};
 };
 
-CustomersImporter.prototype.createTasksMergeUpdate = function(data, contacts){
+CustomersImporter.prototype.filterPresentContacts = function(customers, presentProcessor){
+	var customerMapper = this.createCustomerEmailMapper(customers);
+
+	return function(contact){
+		//We can not check that contact is present as a customer 
+		//if the contact has no an email item.
+		//So we calcualte the contact as new.
+		if(!contact.email) return true;
+
+		var customer = customerMapper(contact.email);
+		var isPresent = (typeof customer !== 'undefined');
+
+		if(isPresent){
+			log.info('Already present: '+contact.email);
+			if(typeof presentProcessor !== 'undefined'){
+				presentProcessor(contact, customer);
+			}
+		}
+
+		return !isPresent;
+	};
+};
+
+
+CustomersImporter.prototype.createTasksMergeUpdate = function(customers, contacts){
 	var self = this;
-	var customerMapper = this.createCustomerEmailMapper(data.customers);
 
 	var update = [];
 	var tasks = contacts
-		.filter(function(contact){
-				if(!contact.email) return true;
-				var customer = customerMapper(contact.email);
-				
-				var isPresent = typeof customer !== 'undefined';
-				if(isPresent){
-					var isDifferent = false;
-					for(var x in contact){
-						if(customer[x] !== contact[x]){
-							customer[x] = contact[x];
-							isDifferent = true;
-						}
-					}
-
-					if(isDifferent){
-						log.info('to update: '+contact.email);
-						update.push(function (callback){
-							self.customerUpdate(customer, customer.id, callback);
-						});
-					}
+		.filter(this.filterPresentContacts(customers, function(contact, customer){
+			var isDifferent = false;
+			
+			for(var x in contact){
+				if(customer[x] !== contact[x]){
+					customer[x] = contact[x];
+					isDifferent = true;
 				}
+			}
 
-				return !isPresent;
-		})
+			if(isDifferent){
+				log.info('To update: '+contact.email);
+				update.push(function (callback){
+					self.customerUpdate(customer, callback);
+				});
+			}
+		}))
 		.map(this.customerCreateTask());
+	
 	return tasks.concat(update);
 };
 
-CustomersImporter.prototype.createTasksMergeIgnore = function(data, contacts){
-	var customerMapper = this.createCustomerEmailMapper(data.customers);
-
+CustomersImporter.prototype.createTasksMergeIgnore = function(customers, contacts){
 	var tasks = contacts
-		.filter(function(contact){
-				if(!contact.email) return true;
-				var customer = customerMapper(contact.email);
-				
-				var isPresent = typeof customer !== 'undefined';
-				if(isPresent){
-					log.info('ignored: '+contact.email);
-				}
-
-				return !isPresent;
-		})
+		.filter(this.filterPresentContacts(customers))
 		.map(this.customerCreateTask());
 
 	return tasks;
 };
 
-CustomersImporter.prototype.importContacts = function(data, cb){
+CustomersImporter.prototype.importContacts = function(data){
 	var self = this;
-	var contacts = data.contacts.map(function(contact){
-		return self.mapContact(data.schememap, contact);
-	});
+	var contacts = this.mapContacts(data.contacts, data.schememap);
 
-	var tasks = [];
+	var importTasks = [];
 	switch(this.mergeRule){
 		case 'add':
-			tasks = contacts.map(this.customerCreateTask());
+			importTasks = contacts.map(this.customerCreateTask());
 			break;
 		case 'update':
-			tasks = this.createTasksMergeUpdate(data, contacts);
+			importTasks = this.createTasksMergeUpdate(data.customers, contacts);
 			break;
 		case 'ignore':
-			tasks = this.createTasksMergeIgnore(data, contacts);
+			importTasks = this.createTasksMergeIgnore(data.customers, contacts);
 			break;
 		default:
-			cb('No such merge Rule:' + this.mergeRule);
+			var err = new Error('No such merge Rule:' + this.mergeRule);
+			return self.emit('error', err);
 	}
 
 	async.parallel(
-		tasks,
+		importTasks,
 		function(err){
-			if(err){
-				cb(err);
-				return;
-			}
-			cb();
+			if(err) return self.emit('error', err);
+			self.emit('import');
 	});
 };
 
-CustomersImporter.prototype.readCustomers = function(req, cb){
+CustomersImporter.prototype.readCustomers = function(cb){
 	var url = config.debitoor.api.customersURL;
 
 	request({
@@ -216,34 +242,32 @@ CustomersImporter.prototype.readCustomers = function(req, cb){
 		headers:{
 			'x-token': this.token
 		}
-	},function (err, response, body) {
-		if(err){
+	},function (err, res, customers) {
+		if(err) return cb(err);
+
+		if(res.statusCode != 200){
+			err = new Error('Debitoor respone code: ' + res.statusCode);
 			cb(err);
-			return;
 		}
-
-		if(response.statusCode != 200){
-			cb('Debitoor respone code: ' + response.statusCode);
-			return;
-		}
-
+	
 		//"isArchived" means not available for user
 		//so we need to filter this customers 
-		var customers = body.filter(function(customer){
+		function isAvailable(customer){
 			return !customer.isArchived;
-		});
+		}
 
-		cb(null, customers);
+		var realCustomers = customers.filter(isAvailable);
+		cb(null, realCustomers);
 	});
 };
 
-CustomersImporter.prototype.process = function(req, res, next){
-	var self = this;
-
+CustomersImporter.prototype.process = function(req){
 	this.token = req.userdata.debitoortoken;
 	this.mergeRule = this.detectMergeRule(req);
 
-	var tasks = {
+	var self = this;
+
+	var readDataForImport = {
 		schememap: function(cb){
 			db.readSchememap(req.user, cb);
 		},
@@ -252,33 +276,19 @@ CustomersImporter.prototype.process = function(req, res, next){
 		}
 	};
 
+	//we do not need to read customers from Debitoor 
+	//if we just post a contacts 
 	if(this.mergeRule !== 'add'){
-		this.customerIdUrlPart = config.debitoor.api.customersURL + '/';
-		this.tokenUrlPart = '?token=' + req.userdata.debitoortoken;
-
-		tasks.customers = function(cb){
-			self.readCustomers(req, cb);
+		readDataForImport.customers = function(cb){
+			self.readCustomers(cb);
 		};
 	}
 
 	async.parallel(
-		tasks,
-		function(err, data){
-			if(err){
-				next(err);
-				return;
-			}
-
-			self.importContacts(data, function(err){
-				if(err){
-					next(err);
-					return;
-				}
-				
-				res.send({
-					'complete': true
-				});
-			});
+		readDataForImport,
+		function(err, dataForImport){
+			if(err) return self.emit('error', err);
+			self.importContacts(dataForImport);
 		});
 };
 

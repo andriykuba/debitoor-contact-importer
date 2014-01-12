@@ -87,7 +87,6 @@ function updateCustomer(token, customer, cb){
 		.set('x-token', token)
 		.end(function(err){
 			if(err) return cb(err);
-			log.info('Updated: ' + customer.email);
 			cb();
 		});
 }

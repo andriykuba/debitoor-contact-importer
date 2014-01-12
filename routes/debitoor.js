@@ -65,7 +65,13 @@ function register(req, res, next){
 
 function customersImport(req, res, next){
 	var importer = new debitoor.CustomersImporter();
-	importer.process(req, res, next);
+	importer.on('error', next);
+	importer.on('import', function(){
+		res.send({
+			'complete': true
+		});
+	});
+	importer.process(req);
 }
 
 exports.register = register;
