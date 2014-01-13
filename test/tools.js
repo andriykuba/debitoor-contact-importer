@@ -4,6 +4,7 @@
 var log = require('winston');
 var request = require('supertest');
 var async = require('async');
+var Q = require('q');
 
 var contactsUploaded = require('./data/contacts-uploaded.json');
 var contactsScheme = require('./data/scheme.json');
@@ -30,31 +31,38 @@ function dropDatabase(cb){
 	});
 }
 
-function dropDatabaseAnd(fn){
-	return function(done){
-		dropDatabase(function(){
-			fn(done);
-		});
-	};
+function getUsers(){
+	var deferred = Q.defer();
+	db.collection('users',function(err,collection){
+		if(err){
+			deferred.reject(err);
+		}else{
+			deferred.resolve(collection);
+		}
+	});
+	return deferred.promise;
 }
 
-function getDebitoorToken(cb){
-	db.collection('users',function(err,collection){
-		if(err) return cb(err);
-		
-		collection.findOne({
-			'username': currentUserName
-		},
-		function (err, doc) {
-			if(err) return cb(err);
-
-			if(doc === null){
-				return cb('Token was not found');
-			}
-
-			cb(null, doc.debitoortoken);
-		});
+function getCurrentUser(collection){
+	var deferred = Q.defer();
+	collection.findOne({
+		'username': currentUserName
+	},function (err, doc) {
+		if(err) {
+			deferred.reject(err);
+		}else if(doc === null){
+			deferred.reject(new Error('Token was not found'));
+		}else{
+			deferred.resolve(doc);
+		}
 	});
+	return deferred.promise;
+}
+
+function getDebitoorToken(){
+	return getUsers()
+		.then(getCurrentUser)
+		.get('debitoortoken');
 }
 
 //Debitoor
@@ -92,8 +100,7 @@ function updateCustomer(token, customer, cb){
 }
 
 function readCustomers(done, cb){
-	getDebitoorToken(function (err, token){
-		if(err) return done(err);
+	getDebitoorToken().then(function (token){
 		request(config.debitoor.api.customersURL)
 			.get('')
 			.set('x-token', token)
@@ -103,6 +110,8 @@ function readCustomers(done, cb){
 				});
 				cb(customers, token);
 			}));
+	}).fail(function(err){
+		return done(err);
 	});
 }
 
@@ -167,7 +176,6 @@ function setup(url, database, configuration){
 
 exports.setup = setup;
 exports.dropDatabase = dropDatabase;
-exports.dropDatabaseAnd = dropDatabaseAnd;
 
 exports.cleanCustomers = cleanCustomers;
 exports.readCustomers = readCustomers;
