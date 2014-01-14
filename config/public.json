@@ -20,11 +20,11 @@
 		},
 		"test":{
 			"app":{
-				"port": 443,
+				"port": 7443,
 				"host": "127.0.0.1"
 			},
 			"db":{
-				"URI": "mongodb://localhost/debitoorimporter-test"
+				"URI": "mongodb://127.0.0.1/debitoorimporter-test"
 			},
 			"users":[
 				{"name": "user1", "password": "password1"},
