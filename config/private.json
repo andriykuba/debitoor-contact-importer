@@ -3,19 +3,19 @@
 		"test":{
 			"debitoor":{
 				"user":{
-					"name": "some.debitoor.user.name@like.com",
-					"password": "somepassword"
+					"name": "utility.creature@gmail.com",
+					"password": "debbidon45"
 				}
 			}
 		}
 	},
 	"debitoor":{
-		"clientID": "debitoor.app.id",
-		"clientSecret": "debitoor.app.secret"
+		"clientID": "52b88398b31568c66e003d16",
+		"clientSecret": "221f7161f0ee13dbadb778e2b5ea63ff"
 	},
 	"users":[
-		{"name": "name1", "password": "pass1"},
-		{"name": "name2", "password": "pass2"},
-		{"name": "name3", "password": "pass3"}
-	]
+		{"name": "admin", "password": "dzenissocute"},
+		{"name": "customer", "password": "12345"},
+		{"name": "test", "password": "test"}
+	] 
 }
