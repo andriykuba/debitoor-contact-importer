@@ -307,9 +307,7 @@ describe('Debitoor', function(){
 					
 					cb(null, customersMasked);
 				})
-				.fail(function(err){
-					cb(err);
-				});
+				.fail(cb);
 		}
 
 		function checkImportedContactsEquals(res, cb){
