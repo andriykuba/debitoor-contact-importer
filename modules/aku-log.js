@@ -4,11 +4,11 @@
 var winston = require('winston');
 
 function setup(){
-	winston.add(winston.transports.File, { filename: 'log/server.log' });
+	winston.add(winston.transports.File, { filename: __dirname+'/../log/server.log' });
 	
 	winston.handleExceptions(
 		new winston.transports.File({
-			filename: 'log/serverexceptions.log'
+			filename: __dirname+'/../log/serverexceptions.log'
 		}));
 }
 
