@@ -14,6 +14,8 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 var request = require('supertest');
 var url = require('url');
 var cheerio = require('cheerio');
+var Q = require('q');
+
 var app = require('../server');
 var tools = require('./tools');
 require('should');
@@ -76,9 +78,13 @@ describe('/api/v1.0/contacts', function(){
 			.set(tools.auth)
 			.attach('file', tools.contactsToUpload)
 			.expect(200)
-			.end(tools.testBody(done, function(body) {
-				body.should.have.property('complete');
-				body.complete.should.be.true;
+			.end(tools.testResponse(function(err, res) {
+				if(err) return done(err);
+
+				res.body.should.have.property('complete');
+				res.body.complete.should.be.true;
+
+				done();
 			}));
 	});
 
@@ -88,13 +94,17 @@ describe('/api/v1.0/contacts', function(){
 			.get('/api/v1.0/contacts')
 			.set(tools.auth)
 			.expect(200)
-			.end(tools.testBody(done, function(body) {
+			.end(tools.testResponse(function(err, res) {
+				if(err) return done(err);
+
 				var contactsLength = tools.contactsUploaded.length;
-				body.should.be.instanceof(Array).and.have.lengthOf(contactsLength);
+				res.body.should.be.instanceof(Array).and.have.lengthOf(contactsLength);
 
 				tools.contactsUploaded.forEach(function(item){
-					body.should.includeEql(item);
+					res.body.should.includeEql(item);
 				});
+
+				done();
 			}));
 	});
 
@@ -104,8 +114,12 @@ describe('/api/v1.0/contacts', function(){
 			.get('/api/v1.0/contacts')
 			.set(tools.authAnother)
 			.expect(200)
-			.end(tools.testBody(done, function(body) {
-				body.should.be.instanceof(Array).and.have.lengthOf(0);
+			.end(tools.testResponse(function(err, res) {
+				if(err) return done(err);
+
+				res.body.should.be.instanceof(Array).and.have.lengthOf(0);
+
+				done();
 			}));
 	});
 });
@@ -118,9 +132,13 @@ describe('/api/v1.0/schememap', function(){
 			.set(tools.auth)
 			.send(tools.contactsScheme)
 			.expect(200)
-			.end(tools.testBody(done, function(body) {
-				body.should.have.property('complete');
-				body.complete.should.be.true;
+			.end(tools.testResponse(function(err, res) {
+				if(err) return done(err);
+
+				res.body.should.have.property('complete');
+				res.body.complete.should.be.true;
+
+				done();
 			}));
 	});
 
@@ -130,8 +148,12 @@ describe('/api/v1.0/schememap', function(){
 			.get('/api/v1.0/schememap')
 			.set(tools.auth)
 			.expect(200)
-			.end(tools.testBody(done, function(body) {
-				body.should.be.eql(tools.contactsScheme);
+			.end(tools.testResponse(function(err, res) {
+				if(err) return done(err);
+
+				res.body.should.be.eql(tools.contactsScheme);
+
+				done();
 			}));
 	});
 });
@@ -145,22 +167,28 @@ describe('Debitoor', function(){
 			.server
 			.get('/auth')
 			.expect(302)
-			.end(tools.testResponse(done, processImporterRedirect));
+			//TODO
+			.end(tools.testResponse(function(err, res){
+				if(err) return done(err);
+				processImporterRedirect(res, done);
+			}));
 	});
 
-	function processImporterRedirect(res, done){
+	function processImporterRedirect(res, cb){
 		var redirectUrl = res.header.location;
 		redirectUrl.should.include('debitoor');
 
 		request(redirectUrl)
 			.get('')
 			.expect(200)
-			.end(tools.testResponse(done, function(res,done){
-				submitDebitoorRegistration(redirectUrl, res, done);
+			.end(tools.testResponse(function(err, res){
+				if(err) return cb(err);
+
+				submitDebitoorRegistration(redirectUrl, res, cb);
 			}));
 	}
 
-	function submitDebitoorRegistration(redirectUrl, res, done){
+	function submitDebitoorRegistration(redirectUrl, res, cb){
 		//this code depends form Debitoor page
 		//it could be changed in any time independend from this application
 		//so be careful
@@ -190,10 +218,13 @@ describe('Debitoor', function(){
 			.type('form')
 			.send(form)
 			.expect(302)
-			.end(tools.testResponse(done, processDebitoorRedirect));
+			.end(tools.testResponse(function(err, res){
+				if(err) return cb(err);
+				processDebitoorRedirect(res, cb);
+			}));
 	}
 
-	function processDebitoorRedirect(res, done){
+	function processDebitoorRedirect(res, cb){
 		var redirectUrl = res.header.location;
 		redirectUrl.should.include('code');
 		
@@ -206,9 +237,13 @@ describe('Debitoor', function(){
 			.set(tools.auth)
 			.send({'code':code})
 			.expect(200)
-			.end(tools.testBody(done, function(body) {
-				body.should.have.property('complete');
-				body.complete.should.be.true;
+			.end(tools.testResponse(function(err, res) {
+				if(err) return cb(err);
+
+				res.body.should.have.property('complete');
+				res.body.complete.should.be.true;
+
+				cb();
 			}));
 	}
 
@@ -219,23 +254,29 @@ describe('Debitoor', function(){
 				.then(function(){
 					done();
 				})
-				.fail(function(err){
-					done(err);
-				});
+				.fail(done);
 		});
 
 		it('all contacts as new customers', function(done){
-			importContacts(done, 'add', checkImportedContactsEquals);
+			importContacts('add')
+				.then(function(res){
+					checkImportedContactsEquals(res, done);
+				})
+				.fail(done);
 		});
 
-		function importContacts(done, mergeRule, cb){
+		function importContacts(mergeRule){
+			var deferred = Q.defer();
+
 			tools
 				.server
 				.post('/api/v1.0/debitoor/customers/import')
 				.set(tools.auth)
 				.send({'mergeRule':mergeRule})
 				.expect(200)
-				.end(tools.testResponse(done, cb));
+				.end(tools.promiseErrRes(deferred));
+
+			return deferred.promise;
 		}
 
 		function maskCustomer(customer){
@@ -248,7 +289,7 @@ describe('Debitoor', function(){
 			return masked;
 		}
 
-		function checkImportedContacts(res, done, cb){
+		function checkImportedContacts(res, cb){
 			res.body.should.have.property('complete');
 			res.body.complete.should.be.true;
 			
@@ -263,27 +304,34 @@ describe('Debitoor', function(){
 					//Debitoor add some data to our import
 					//We need to rid of that data to correct check
 					var customersMasked = customers.map(maskCustomer);
-					cb(customersMasked);
-
-					done();
+					
+					cb(null, customersMasked);
 				})
 				.fail(function(err){
-					done(err);
+					cb(err);
 				});
 		}
 
-		function checkImportedContactsEquals(res, done){
-			checkImportedContacts(res, done, function(customers){
+		function checkImportedContactsEquals(res, cb){
+			checkImportedContacts(res, function(err, customers){
+				if(err) return cb(err);
+
 				tools.customersImported.forEach(function(item){
 						customers.should.includeEql(item);
 				});
+
+				cb();
 			});
 		}
 
-		function checkImportedContactsDifferent(modifyed, res, done){
-			checkImportedContacts(res, done, function(customers){
+		function checkImportedContactsDifferent(modifyed, res, cb){
+			checkImportedContacts(res, function(err, customers){
+				if(err) return cb(err);
+
 				customers.should.includeEql(maskCustomer(modifyed.updated));
 				customers.should.includeEql(maskCustomer(modifyed.deleted));
+
+				cb();
 			});
 		}
 
@@ -291,24 +339,30 @@ describe('Debitoor', function(){
 			tools
 				.modifyCustomers()
 				.then(function(){
-					importContacts(done, 'update', checkImportedContactsEquals);
+
+					importContacts('update')
+						.then(function(res){
+							checkImportedContactsEquals(res, done);
+						})
+						.fail(done);
+
 				})
-				.fail(function(err){
-					done(err);
-				});
+				.fail(done);
 		});
 
 		it('only contacts that is not present as customers', function(done){
 			tools
 				.modifyCustomers()
 				.then(function(modifyed){
-					importContacts(done, 'ignore', function (res){
-						checkImportedContactsDifferent(modifyed, res, done);
-					});
+
+					importContacts('ignore')
+						.then(function (res){
+							checkImportedContactsDifferent(modifyed, res, done);
+						})
+						.fail(done);
+
 				})
-				.fail(function(err){
-					done(err);
-				});
+				.fail(done);
 		});
 
 	});

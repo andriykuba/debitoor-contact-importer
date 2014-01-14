@@ -177,23 +177,16 @@ function modifyCustomers(){
 //if we directly throw exception in the ".end()" function of "supertest".
 //This function wrap the handling of error 
 //for correct pass the error in the ".done()" function. 
-function testResponse(done, cb) {
+function testResponse(cb) {
 	return function (err,res) {
-		if(err) return done(err);
+		if(err) return cb(err);
 
 		try{
-			cb(res, done);
-		}catch(error){
-			return done(error);
+			cb(null, res);
+		}catch(err){
+			return cb(err);
 		}
 	};
-}
-
-function testBody(done, cb) {
-	return testResponse(done, function(res){
-		cb(res.body);
-		done();
-	});
 }
 
 var db = null;
@@ -223,5 +216,6 @@ exports.auth =  getAuthHeader(currentUserName+':'+currentUserPassword);
 exports.authAnother =  getAuthHeader('user2:password2');
 exports.authWrong = getAuthHeader('u:u');
 
-exports.testBody = testBody;
 exports.testResponse = testResponse;
+
+exports.promiseErrRes = promiseErrRes;
