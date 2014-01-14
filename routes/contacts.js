@@ -6,6 +6,7 @@ var jsonUtil = require('../modules/aku-json');
 var db = require('../modules/aku-database');
 var csv = require('csv');
 var log = require('winston');
+var async = require('async');
 
 function get (req, res, next){
 	db.readContacts(req.user, function(err, contacts){
@@ -19,14 +20,12 @@ function get (req, res, next){
 }
 
 function parseCSV(CSVData, username, cb){
-	var recordsStill = 0;
-	var isAllCommited = false;
 
-	function tryEnd(){
-		if(isAllCommited && recordsStill===0){
-			cb();
-		}
+	function worker(data, done) {
+		data(done);
 	}
+
+	var queue = async.queue(worker, Infinity);
 
 	csv()
 	.from.string(CSVData,{
@@ -40,17 +39,23 @@ function parseCSV(CSVData, username, cb){
 			contact:doc
 		});
 
-		recordsStill++;
-		contact.save(function (){
-			recordsStill--;
-			tryEnd();
-		});
+		queue.push(contact.save.bind(contact));
 	})
 	.on('end', function(count){
 		log.info('Number of contacts: '+count);
-		isAllCommited = true;
-		tryEnd();
+		end();
 	});
+
+	function end(){
+		if(queue.length() === 0){
+			cb();
+		}else{
+			queue.drain = function(){
+				cb();
+			};
+		}
+	}
+
 }
 
 function cleanAndSave(CSVData, username, cb){
