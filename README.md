@@ -2,6 +2,8 @@
 
 This project was created for users of Debitoor to help them easily create invoices for their customers. [The main goal is import of user's email contacts from different sources into Debitoor](http://e-conomic.github.io/openvac/interview.html). Almost all program of email contacts management have option to export contacts as [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) file. So CSV file was selected as the starting point for import of contacts into Debitoor. Project is developed as [REST API](http://en.wikipedia.org/wiki/Representational_state_transfer) for easy integrating with different systems.
 
+[![Build Status](https://travis-ci.org/andriykuba/debitoor-contact-importer.png?branch=master)](https://travis-ci.org/andriykuba/debitoor-contact-importer)
+
 - [Requirements](#requirements)
 - [How it works](#how-it-works)
 - [Authentication](#authentication)
@@ -17,7 +19,7 @@ This project was created for users of Debitoor to help them easily create invoic
 - [Import](#import)
   - [/api/v1.0/debitoor/customers/import](#api-v1-0-debitoor-customers-import)
     - [POST](#post_1)
-- [Tests](#tests)
+- [Tests](#tests) 
   - [Structure](#structure)
 - [Possible Improvements](#possible-improvements)
 
