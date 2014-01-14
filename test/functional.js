@@ -9,7 +9,7 @@
 process.env.NODE_ENV = 'test';
 
 //Accept self signed sertificate. Trivial sertificate for testing
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0" 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 var request = require('supertest');
 var url = require('url');
@@ -214,7 +214,14 @@ describe('Debitoor', function(){
 
 	describe('import', function(){
 		before(function(done){
-			tools.cleanCustomers(done);
+			tools
+				.cleanCustomers()
+				.then(function(){
+					done();
+				})
+				.fail(function(err){
+					done(err);
+				});
 		});
 
 		it('all contacts as new customers', function(done){
@@ -231,11 +238,11 @@ describe('Debitoor', function(){
 				.end(tools.testResponse(done, cb));
 		}
 
-		function maskCustomer(cusromer){
+		function maskCustomer(customer){
 			var masked = {};
 			tools.customersImportedMask.forEach(function(field){
-				if(typeof cusromer[field] !== 'undefined'){
-					masked[field] = cusromer[field];
+				if(typeof customer[field] !== 'undefined'){
+					masked[field] = customer[field];
 				}
 			});
 			return masked;
@@ -245,17 +252,24 @@ describe('Debitoor', function(){
 			res.body.should.have.property('complete');
 			res.body.complete.should.be.true;
 			
-			tools.readCustomers(done, function(customers){
-				var customersLength = tools.customersImported.length;
-				customers.should.be.instanceof(Array).and.have.lengthOf(customersLength);
+			tools
+				.readCustomers()
+				.then(function(debitoor){
+					var customers = debitoor.customers;
 
-				//Debitoor add some data to our import
-				//We need to rid of that data to correct check
-				var customersMasked = customers.map(maskCustomer);
-				cb(customersMasked);
+					var customersLength = tools.customersImported.length;
+					customers.should.be.instanceof(Array).and.have.lengthOf(customersLength);
 
-				done();
-			});
+					//Debitoor add some data to our import
+					//We need to rid of that data to correct check
+					var customersMasked = customers.map(maskCustomer);
+					cb(customersMasked);
+
+					done();
+				})
+				.fail(function(err){
+					done(err);
+				});
 		}
 
 		function checkImportedContactsEquals(res, done){
@@ -266,25 +280,35 @@ describe('Debitoor', function(){
 			});
 		}
 
-		function checkImportedContactsDifferent(delited, updated, res, done){
+		function checkImportedContactsDifferent(modifyed, res, done){
 			checkImportedContacts(res, done, function(customers){
-				customers.should.includeEql(maskCustomer(updated));
-				customers.should.includeEql(maskCustomer(delited));
+				customers.should.includeEql(maskCustomer(modifyed.updated));
+				customers.should.includeEql(maskCustomer(modifyed.deleted));
 			});
 		}
 
 		it('new customers or update present customers', function(done){
-			tools.modifyCustomers(done, function(){
-				importContacts(done, 'update', checkImportedContactsEquals);
-			});
+			tools
+				.modifyCustomers()
+				.then(function(){
+					importContacts(done, 'update', checkImportedContactsEquals);
+				})
+				.fail(function(err){
+					done(err);
+				});
 		});
 
 		it('only contacts that is not present as customers', function(done){
-			tools.modifyCustomers(done, function(delited, updated){
-				importContacts(done, 'ignore', function (res){
-					checkImportedContactsDifferent(delited,updated, res, done);
+			tools
+				.modifyCustomers()
+				.then(function(modifyed){
+					importContacts(done, 'ignore', function (res){
+						checkImportedContactsDifferent(modifyed, res, done);
+					});
+				})
+				.fail(function(err){
+					done(err);
 				});
-			});
 		});
 
 	});

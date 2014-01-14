@@ -14,6 +14,24 @@ var customersImportedMask = require('./data/customers-imported-mask.json');
 var currentUserName = 'user1';
 var currentUserPassword = 'password1';
 
+//promises
+function promiseErrRes(deferred, processor){
+	return function(err,res){
+		if(err){
+			deferred.reject(err);
+		}else if(processor){
+			try{
+				var processed = processor(res);
+				deferred.resolve(processed);
+			}catch(error){
+				deferred.reject(error);
+			}
+		}else{
+			deferred.resolve(res);
+		}
+	};
+}
+
 //Auth
 function getAuthHeader(userData){
 	var userDataHash = new Buffer(userData).toString('base64');
@@ -33,29 +51,19 @@ function dropDatabase(cb){
 
 function getUsers(){
 	var deferred = Q.defer();
-	db.collection('users',function(err,collection){
-		if(err){
-			deferred.reject(err);
-		}else{
-			deferred.resolve(collection);
-		}
-	});
+	
+	db.collection('users', promiseErrRes(deferred));
+	
 	return deferred.promise;
 }
 
 function getCurrentUser(collection){
 	var deferred = Q.defer();
+	
 	collection.findOne({
 		'username': currentUserName
-	},function (err, doc) {
-		if(err) {
-			deferred.reject(err);
-		}else if(doc === null){
-			deferred.reject(new Error('Token was not found'));
-		}else{
-			deferred.resolve(doc);
-		}
-	});
+	},promiseErrRes(deferred));
+	
 	return deferred.promise;
 }
 
@@ -66,21 +74,24 @@ function getDebitoorToken(){
 }
 
 //Debitoor
-function cleanCustomers(done){
-	readCustomers(done, function(customers, token){
-		var tasks = customers.map(function(item){
-			return function(cb){
-				deleteCustomer(token, item, cb);
-			};
-		});
+function cleanCustomersPromise(debitoor){
+	var deferred = Q.defer();
 
-		async.parallel(
-			tasks,
-			function(err){
-				if(err) return done(err);
-				done();
-		});
-	});
+	function deleteCustomerTask(customer){
+		return function(cb){
+			deleteCustomer(debitoor.token, customer, cb);
+		};
+	}
+
+	var tasks = debitoor.customers.map(deleteCustomerTask);
+
+	async.parallel(tasks, promiseErrRes(deferred));
+
+	return deferred.promise;
+}
+
+function cleanCustomers(){
+	return readCustomers().then(cleanCustomersPromise);
 }
 
 function deleteCustomer(token, customer, cb){
@@ -99,46 +110,67 @@ function updateCustomer(token, customer, cb){
 		});
 }
 
-function readCustomers(done, cb){
-	getDebitoorToken().then(function (token){
-		request(config.debitoor.api.customersURL)
-			.get('')
-			.set('x-token', token)
-			.end(testResponse(done, function(res){
-				var customers = res.body.filter(function(customer){
-						return !customer.isArchived;
-				});
-				cb(customers, token);
-			}));
-	}).fail(function(err){
-		return done(err);
-	});
+function readCustomersPromise(token){
+	var deferred = Q.defer();
+
+	request(config.debitoor.api.customersURL)
+		.get('')
+		.set('x-token', token)
+		.end(promiseErrRes(deferred, filterCustomers));
+
+	function filterCustomers(res){
+		var customers = res.body.filter(ridOffDeleted);
+		return {
+			'customers':customers,
+			'token':token
+		};
+	}
+
+	function ridOffDeleted(customer){
+		return !customer.isArchived;
+	}
+
+	return deferred.promise;
 }
 
-function modifyCustomers(done, cb){
-	readCustomers(done, function(customers, token){
-		var tasks = [];
-		
-		var deletedCustomer = customers[0];
-		var updatedCustomer = customers[1];
-		updatedCustomer.name = 'UPDATED NAME';
+function readCustomers(){
+	return getDebitoorToken().then(readCustomersPromise);
+}
 
-		tasks.push(function(callback){
-			deleteCustomer(token, deletedCustomer, callback);
-		});
-		
-		tasks.push(function(callback){
-			updateCustomer(token, updatedCustomer, callback);
-		});
-		
-		async.parallel(
-			tasks,
-			function(err){
-				if(err) return done(err);
+function modifyCustomersPromise(debitoor){
+	var deferred = Q.defer();
 
-				cb(deletedCustomer, updatedCustomer);
-		});
+	var tasks = [];
+	
+	var deletedCustomer = debitoor.customers[0];
+	var updatedCustomer = debitoor.customers[1];
+	updatedCustomer.name = 'UPDATED NAME';
+
+	tasks.push(function(callback){
+		deleteCustomer(debitoor.token, deletedCustomer, callback);
 	});
+	
+	tasks.push(function(callback){
+		updateCustomer(debitoor.token, updatedCustomer, callback);
+	});
+	
+	async.parallel(
+		tasks,
+		promiseErrRes(deferred, returnModifiedCustomers)
+		);
+	
+	function returnModifiedCustomers(){
+		return {
+			'deleted': deletedCustomer,
+			'updated': updatedCustomer
+		};
+	}
+
+	return deferred.promise;
+}
+
+function modifyCustomers(){
+	return readCustomers().then(modifyCustomersPromise);
 }
 
 //Mocha will not show error in the console, and test will shut down
