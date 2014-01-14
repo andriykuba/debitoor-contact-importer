@@ -337,28 +337,25 @@ describe('Debitoor', function(){
 			tools
 				.modifyCustomers()
 				.then(function(){
-
-					importContacts('update')
-						.then(function(res){
-							checkImportedContactsEquals(res, done);
-						})
-						.fail(done);
-
+					return importContacts('update')
+				})
+				.then(function(res){
+					checkImportedContactsEquals(res, done);
 				})
 				.fail(done);
 		});
 
 		it('only contacts that is not present as customers', function(done){
+			
+			var modifyed = null;
 			tools
 				.modifyCustomers()
-				.then(function(modifyed){
-
-					importContacts('ignore')
-						.then(function (res){
-							checkImportedContactsDifferent(modifyed, res, done);
-						})
-						.fail(done);
-
+				.then(function(res){
+					modifyed = res;
+					return importContacts('ignore')
+				})
+				.then(function (res){
+						checkImportedContactsDifferent(modifyed, res, done);
 				})
 				.fail(done);
 		});
