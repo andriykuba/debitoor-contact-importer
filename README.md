@@ -25,7 +25,7 @@ This project was created for users of Debitoor to help them easily create invoic
 
 ## Requirements
 
-[**Node.js**](http://nodejs.org/) for run, [**MongoDB**](http://www.mongodb.org/) for save and [**Mocha**](http://visionmedia.github.io/mocha/) for tests.
+[**Node.js**](http://nodejs.org/) for run, [**MongoDB**](http://www.mongodb.org/) for save and [**Mocha**](http://mochajs.org/) for tests.
 
 The configuration is in the `config/private.json` and the `config/public.json` files. The `config/private.json` file is used for store a secret properties such as a user passwords or the "client secret" of Debitoor API. It's a nice idea to exclude it from your repository. For example you could use `git update-index --assume-unchanged config/private.json` command right after first pull. 
 
@@ -263,7 +263,7 @@ Request example:
 
 ## Tests
 
-We use [**Mocha**](http://visionmedia.github.io/mocha/), [**Should**](https://github.com/visionmedia/should.js) and [**Supertest**](https://github.com/visionmedia/supertest) for testing.
+We use [**Mocha**](http://mochajs.org/), [**Should**](https://github.com/visionmedia/should.js) and [**Supertest**](https://github.com/visionmedia/supertest) for testing.
 
 Main accent is done on the functional testing. We did test for all endpoints, including registration in Debitoor. In the process of tests we drop test database and delete all customers from Debitoor account. So be careful - do not test against useful accounts.
 
